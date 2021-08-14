@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- menu -->
+    <div class="menu-container">
+        <select id="font-family" class="font-family menu-selector">
+            <option value="Arial">Arial</option>
+            <option value="Cambria">Cambria</option>
+            <option value="Georgia">Georgia</option>
+            <option value="monospace">Monospace</option>
+            <option value="sans-serif">Sans-serif</option>
+            <option value="fantasy">Fantasy</option>
+        </select>
+        <div class="seperator"></div>
+
+        <select id="font-size" class="font-size menu-selector">
+            <option value="10">10</option>
+            <option value="12">12</option>
+            <option value="16">16</option>
+            <option value="20">20</option>
+            <option value="32">32</option>
+            <option value="64">64</option>
+        </select>
+        <div class="seperator"></div>
+
+        <button class="bold menu-icon"><i class="material-icons">format_bold</i></button>
+        <button class="italic menu-icon"><i class="material-icons">format_italic</i></button>
+        <button class="underline menu-icon"><i class="material-icons">format_underlined</i></button>
+        <div class="seperator"></div>
+
+        <div class="color-container">
+            <img src="https://img.icons8.com/material-sharp/20/000000/generic-text.png"/>
+            <input type="color" class = "color" id="fg-color">
+        </div>
+        <div class="color-container">
+            <img src="https://img.icons8.com/material-sharp/24/000000/fill-color.png"/>
+            <input type="color" class = "color" id="bg-color">
+        </div>
+        <div class="seperator"></div>
+
+        <button class="alignment left menu-icon"><i class="material-icons">format_align_left</i></button>
+        <button class=" alignment center menu-icon"><i class="material-icons">format_align_center</i></button>
+        <button class=" alignment right menu-icon"><i class="material-icons">format_align_right</i></button>
+    </div>
+    
+    <!-- formula  -->
+    <div class="formula-container">
+        <input type="text" class="address-box" readonly>
+        <div class="seperator"></div>
+        <span id="formula-sign">&#402;x</span>
+        <div class="seperator"></div>
+        <input type="text" class="formula-box">
+    </div>
+    <!-- grid -->
+    <div class="grid_container">
+        <div class="top-left-block">
+        </div>
+        <div class="top-row">
+        </div>
+        <div class="left-col">
+        </div>
+        <div class="grid"></div>
+    </div>
+    <!-- sheets -->
+    <div class="sheets">
+        <div class="add-sheet_container">
+            <i class="fas fa-plus icon"></i>
+        </div>
+        <div class="sheets-list">
+            <div class="sheet active-sheet" sheetIdx="1"> Sheet 1</div>
+        </div>
+    </div>
+    <script src="init.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="newOpenSave.js" defer></script>
+</body>
+
+</html>

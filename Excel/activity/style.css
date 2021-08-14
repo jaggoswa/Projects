@@ -1,0 +1,234 @@
+body{
+    margin:0;
+}
+*{
+    box-sizing: border-box;
+    /* border:1px solid red; */
+}
+/* ********************* */
+.menu-container {
+    display: flex;
+    flex-direction: row;
+    height: 6vh;
+    align-items: center;
+}
+
+.menu-icon {
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100%; */
+}
+
+.menu-icon:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.menu-selector {
+    height: 4.5 vh;
+    font-size: 1rem;
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+}
+
+#font-family {
+    border: none;
+    outline: none;
+    width: 10vw;
+    min-width: 130px;
+    font-family: Noto Sans;
+}
+
+#font-size {
+    border: none;
+    outline: none;
+    width: 3.5vw;
+    min-width: 55px;
+}
+
+.formatting-container{
+    display: flex;
+    justify-content: space-around;
+}
+.active-btn{
+    background-color:rgb(110, 104, 104)
+}
+
+button{
+    border: none;
+    background-color: white;
+}
+
+.color{
+    border: none;
+    width: 1.4rem;
+}
+
+.color-container{
+    width: 3.5rem;
+    height: 1.9rem;
+    border: 1rem;
+    border-style: solid;
+    border-width: thin;
+    margin: 0.5rem;
+}
+
+.seperator{
+    border-left: 2px solid;
+    height: 20px;
+}
+
+/* ********************** */
+/* formula container styling starts here */
+.formula-container{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-top-style: inset;
+    border-width: thin;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+.address-box{
+    border: none;
+    outline: none;
+    width:10%;
+}
+
+.formula-box{
+    border: none;
+    outline: none;
+    width:80%;
+}
+
+#formula-sign{
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+/*  */
+
+.sheets{
+    background-color: lightgrey;
+    height:40px;
+    display: flex;
+}
+.add-sheet_container{
+    height: 100%;
+    min-width:30px;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    font-size: 1.2rem;
+    color:gray;
+}
+.sheets-list{
+
+    display: flex;
+    height: 100%;
+    overflow-x: auto;
+}
+.sheets-list::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .sheets-list {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+.sheet{
+    min-width:60px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.active-sheet
+{
+    background-color: white;
+}
+
+
+
+
+
+
+
+/************************ grid container css *************************************/
+.top-left-block {
+    height: 30px;
+    width: 25px;
+    background-color: rgb(200, 230, 250);
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index:100;
+}
+.top-row {
+    height: 30px;
+    background-color: rgb(200, 230, 250);
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 25px;
+    z-index:90;
+}
+
+/* .grid_container {
+    position: relative;
+    border:5px solid red
+} */
+.row {
+    display: flex;
+}
+
+.col {
+    min-width: 80px;
+    max-width:80px;
+    border: 0.1px inset;
+    min-height: 30px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.left-col {
+    width: 25px;
+    position: absolute;
+    top:30px;
+    left:0px;
+    z-index:90;
+}
+.left-col_box {
+    height: 30px;
+    background-color: rgb(200, 230, 250);
+    text-align: center;
+    border: 0.1px inset;
+}
+
+.grid_container{
+    height:calc(100vh - ( 80px + 30px + 40px) );
+    overflow: auto;
+    position: relative;
+}
+.grid{
+    position:absolute;
+    top:30px;
+    left:25px;
+}
+
+
+
