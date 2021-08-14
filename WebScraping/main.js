@@ -25,7 +25,7 @@ function extractLink(html) {
     // console.log(link);
     let fullLink = "https://www.espncricinfo.com" + link;
     console.log(fullLink);
-    // AllMatcgObj.gAlmatches(fullLink);
+    AllMatcgObj.gAlmatches(fullLink);
 }
 
 function dirCreater(filePath) {
